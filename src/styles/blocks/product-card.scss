@@ -82,8 +82,7 @@
     border: 1px solid transparent;
     border-radius: 5px;
 
-    transition:
-      color $hover-effects-duration,
+    transition: color $hover-effects-duration,
       border-color $hover-effects-duration,
       background-color $hover-effects-duration;
 
