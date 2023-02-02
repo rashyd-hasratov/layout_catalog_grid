@@ -1,0 +1,8 @@
+@mixin squareContainer($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin catalogGridTemplateColumns ($repeatCount) {
+  grid-template-columns: repeat($repeatCount, $product-card-width);
+}

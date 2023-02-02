@@ -1,0 +1,19 @@
+.catalog {
+  display: grid;
+  justify-content: center;
+  @include catalogGridTemplateColumns(4);
+  gap: $catalog-gap;
+  padding: $catalog-paddingY $catalog-paddingX;
+
+  @media (max-width: 1023px) {
+    @include catalogGridTemplateColumns(3);
+  }
+
+  @media (max-width: 767px) {
+    @include catalogGridTemplateColumns(2);
+  }
+
+  @media (max-width: 487px) {
+    @include catalogGridTemplateColumns(1);
+  }
+}
