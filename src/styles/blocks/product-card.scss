@@ -5,7 +5,7 @@
   width: $product-card-width;
 
   background-color: $accent-white-color;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $accent-light-gray-color;
   border-radius: 5px;
 
   transition: transform $hover-effects-duration;

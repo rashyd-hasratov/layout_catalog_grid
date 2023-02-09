@@ -5,15 +5,9 @@
   gap: $catalog-gap;
   padding: $catalog-paddingY $catalog-paddingX;
 
-  @media (max-width: 1023px) {
-    @include catalogGridTemplateColumns(3);
-  }
-
-  @media (max-width: 767px) {
-    @include catalogGridTemplateColumns(2);
-  }
-
-  @media (max-width: 487px) {
-    @include catalogGridTemplateColumns(1);
+  @each $max-width, $columns in $catalog-media-settings {
+    @media (max-width: $max-width) {
+      @include catalogGridTemplateColumns($columns);
+    }
   }
 }
